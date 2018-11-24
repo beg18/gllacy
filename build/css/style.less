@@ -17,22 +17,10 @@
 @import (less)"../../node_modules/corenav/coreNavigation.css";
 @import (less)"../../bower_components/lightgallery/dist/css/lightgallery.min.css";
 @import (less)"../../bower_components/lightgallery/dist/css/lg-transitions.min.css";
-
+.reset();
 */
 
-
-
-.reset();
-
-html, body {
-    height: 100%;
-}
-
-body {
-    font-family: @ff-s-serifArial;
-    font-size: @regular;
-    color: @base_color;
-}
+@import "@{bootstrap}normalize";
 
 ul, ol {
     list-style: none;
@@ -84,6 +72,24 @@ fieldset {
     .debug(rgba(0, 0, 0, 0.5), 1px solid #ff0);
 }
 */
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+header,
+footer {
+  flex: 0 0 auto;
+}
+
+main {
+  flex: 1 0 auto;
+}
 
 html {
   .html-fz(16);
