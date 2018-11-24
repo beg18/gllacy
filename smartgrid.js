@@ -4,23 +4,23 @@ smartgrid('src/css/libs', {
     mobileFirst: false,
     filename: "smart-grid",
     columns: 12,
-    offset: "30px",
+    offset: "20px",
     container: {
-        maxWidth: "1180px"
+        maxWidth: "900px"
     },
     breakPoints: {
         md: {
-            width: "992px",
-            fields: "15px"
+            width: "860px",
+            fields: "10px"
         },
         sm: {
             width: "720px"
         },
         xs: {
-            width: "576px"
+            width: "600px"
         },
         xxs: {
-            width: "380px"
+            width: "320px"
         }
     }
 });
